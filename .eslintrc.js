@@ -6,6 +6,7 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
   },
+  root: true,
   rules: {
     '@next/next/no-img-element': 'off',
     'react-hooks/exhaustive-deps': 'off',
