@@ -1,7 +1,18 @@
 module.exports = {
-  extends: ['next', 'next/core-web-vitals', 'eslint:recommended', 'prettier'],
-  plugins: ['@typescript-eslint', 'import', 'unused-imports'],
-  env: { node: true, es6: true },
+  extends: [
+    'next',
+    'next/core-web-vitals',
+    'eslint:recommended',
+    'plugin:jest/recommended',
+    'plugin:jest/style',
+    'prettier',
+  ],
+  plugins: ['@typescript-eslint', 'import', 'unused-imports', 'jest'],
+  env: {
+    node: true,
+    es6: true,
+    'jest/globals': true,
+  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
@@ -19,5 +30,7 @@ module.exports = {
         alphabetize: { order: 'asc', caseInsensitive: true },
       },
     ],
+    'jest/consistent-test-it': ['error', { fn: 'it' }],
+    'jest/require-top-level-describe': ['error'],
   },
 }
