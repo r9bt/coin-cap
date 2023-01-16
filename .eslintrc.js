@@ -19,10 +19,13 @@ module.exports = {
   },
   root: true,
   rules: {
+    'newline-before-return': 'error',
+    'prefer-template': 'error',
     '@next/next/no-img-element': 'off',
     'react-hooks/exhaustive-deps': 'off',
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
+    'unused-imports/no-unused-imports': 'error',
     'import/order': [
       'error',
       {
