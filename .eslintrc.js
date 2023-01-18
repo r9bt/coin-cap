@@ -33,6 +33,13 @@ module.exports = {
         alphabetize: { order: 'asc', caseInsensitive: true },
       },
     ],
+    'react/self-closing-comp': [
+      'error',
+      {
+        component: true,
+        html: true,
+      },
+    ],
     'jest/consistent-test-it': ['error', { fn: 'it' }],
     'jest/require-top-level-describe': ['error'],
   },
